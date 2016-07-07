@@ -1,7 +1,7 @@
-importScripts("bower_components/ace-worker/worker.js");
-importScripts("bower_components/ace-builds/src-min-noconflict/ace.js");
-importScripts("bower_components/ace-worker/mirror.js");
-importScripts("bower_components/antlr4-javascript-cypher/release/antlr4-cypher.js");
+importScripts("../bower_components/ace-worker/worker.js");
+importScripts("../bower_components/ace-builds/src-min-noconflict/ace.js");
+importScripts("../bower_components/ace-worker/mirror.js");
+importScripts("../bower_components/antlr4-javascript-cypher/release/antlr4-cypher.js");
 
 ace.define('ace/worker/cypher-worker',["require","exports","module","ace/lib/oop","ace/worker/mirror"], function(require, exports, module) {
   "use strict";

@@ -4,5 +4,5 @@ ace.config.setModuleUrl(
 );
 ace.config.setModuleUrl(
   'ace/worker/cypher-worker',
-  './cypher-worker.js'
+  './worker/cypher-worker.js'
 );
