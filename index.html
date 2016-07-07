@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cypher editor created with ANTLR4 and ACE</title>
+  <link rel="stylesheet" href="index.css">
+
+  <script src="bower_components/ace-builds/src-min-noconflict/ace.js"></script>
+  <script src="bower_components/ace-builds/src-min-noconflict/ext-language_tools.js"></script>
+  <script src="bower_components/antlr4-javascript-cypher/release/antlr4-cypher.js"></script>
+  <script src="ace-config.js"></script>
+  <script src="bower_components/antlr4-ace-ext/src/token-type-map.js"></script>
+  <script src="bower_components/antlr4-ace-ext/src/tokenizer.js"></script>
+</head>
+<body>
+  <div id="editor">MATCH (user)-[:friend]->(follower)
+    WHERE user.name IN ["Joe", "John", "Sara", "Maria", "Steve"] AND follower.name =~ "S.*"
+    RETURN user.name, follower.name
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
